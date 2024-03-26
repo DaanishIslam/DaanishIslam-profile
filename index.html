@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="assets/dev-favicon.png" type="image/x-icon">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+
+<body>
+    <!-- Header Section Containing the Navbar -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar-container">
+
+            <!-- website logo on the left-->
+            <a href="#" class="portfolio-logo">
+                <img class="portfolio-logo-img" src="assets\portfolio-logo.png" alt="LOGO">
+            </a>
+
+            <!-- navigation links in center justified -->
+            <!-- <div class="navbar-collapsible"></div> -->
+            <ul class="navbar-pages-ul">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Navigation toggle button to the right -->
+            <button class="navbar-toggle-btn" type="button" onclick="open_dropdown_menu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="navbar-toggle-btn-dropdown-menu">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#home" onclick="open_dropdown_menu()">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" onclick="open_dropdown_menu()">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" onclick="open_dropdown_menu()">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" onclick="open_dropdown_menu()">Projects</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#gallery" onclick="open_dropdown_menu()">Gallery</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#contact" onclick="open_dropdown_menu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Section Containing all sub sections-->
+    <main class="Main-page">
+
+        <!-- section 1: Home -->
+        <section id="home" class="Homepage">
+            <div class="Homepage-container">
+                <!-- Intro -->
+                <h1 class="hero-title">Hi, Its me Daanish Islam</h1>
+                <p class="hero-description">I am a Data Scientist in the making</p>
+            </div>
+
+            <div class="CV-container">
+                <button class="btn-cv" onclick="window.open('./assets/DI-CV.pdf')">
+                    Download CV</button>
+            </div>
+            <button class="scroll-down-btn" onclick="location.href='./#about' ">
+                <i class="fa-solid fa-angles-down"></i>
+            </button>
+        </section>
+
+        <section id="about" class="Aboutpage">
+            <p>Get to know</p>
+            <h2>About Me</h2>
+
+            <div class="Aboutpage-container">
+
+                <div class="Aboutpage-profile-pic-container">
+                    <img class="Aboutpage-Profile-logo-img" src="assets\profile-pic.jpg" alt="Profile Pic">
+                </div>
+
+                <div class="details-container">
+
+                    <div class="about-bio-container">
+
+                        <div class="info-container">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h3>Experience</h3>
+                            <p>Fresher <br /> Data Science</p>
+                        </div>
+
+                        <div class="info-container">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <h3>Education</h3>
+                            <p>BTECH Computer Engineering <br />Birla Institute of Technology, Mesra</p>
+                        </div>
+
+                    </div>
+
+                    <div class="about_text">
+                        <p class="about_p">
+                            As a final-year Computer Engineering student, I am fascinated to
+                            the process of discovering new ways to solve problems through
+                            programming and have a knack for problem solving in DSA. My
+                            goal is to contribute towards significant developments in
+                            technology while remaining committed to continuous
+                            improvement. I am determined to contribute effectively to a
+                            professional organization by bringing my passion and abilities.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <button class="scroll-down-btn" onclick="location.href='./#experience'">
+                <i class="fa-solid fa-angles-down"></i>
+            </button>
+        </section>
+
+        <section id="experience" class="ExperiencePage">
+            <h2>Experience</h2>
+            <p>Attained</p>
+            <div class="ExperiencePage-container">
+
+                <div class="details-container">
+                    <div class="skills-exp">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Technical Skills</h3>
+                        <!-- <p>Fresher <br /> Data Science</p> -->
+                        <div class="skills-grid-container1">
+                            <div> <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                            </div>
+                            <div>
+                                <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                            </div>
+                            <div>
+                                <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                            </div>
+                            <div>
+                                <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+
+                            </div>
+                            <div>
+                                <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                            </div>
+                            <div>
+                                <img class="grid-item-img"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="skills-exp">
+                        <i class="fa-solid fa-person-rays"></i>
+                        <h3>Soft Skills</h3>
+                        <div class="skills-grid-container2">
+                            <div><i class="fa-sharp fa-solid fa-people-group" style="color: #5b8aae;"></i><br>team work
+                            </div>
+                            <div><i class="fa-solid fa-chalkboard-user" style="color: #5b8aae;"></i><br>Collaboration
+                            </div>
+                            <div><i class="fa-regular fa-comments" style="color: #5b8aae;"></i><br>Communication</div>
+                            <div><i class="fa-solid fa-hourglass-start" style="color: #5b8aae;"></i><br>Time Management
+                            </div>
+                            <div><br></div>
+                            <div><i class="fa-solid fa-star" style="color: #5b8aae;"></i><br>Leadership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-down-btn" onclick="location.href='./#projects'">
+                <i class="fa-solid fa-angles-down"></i>
+            </button>
+        </section>
+
+        <section id="projects" class="ProjectsPage">
+            <h2>Projects</h2>
+            <p>developed</p>
+            <div class="ProjectsPage-container">
+                <!-- div for all projects -->
+                <div class="project-catalogue">
+                    <!-- div for each project -->
+                    <div class="catalogue-card">
+                        <!-- place it left -->
+                        <div class="catalogue-card-visual">
+                            <img src="./assets/aicml.jpeg" alt="Avatar">
+                            
+                            <h2>Automated Image Categorization</h2>
+                            <p> ML / DL </p>
+                            <button class="prj-btn">Source Code</button>
+                        </div>
+                        <!-- will be in right -->
+                        <div class="catalogue-card-desc">
+                            <ul class="work-experience">
+                                <li>
+                                    <h3>Project Description</h3>
+                                    <ul>
+                                        <li>Automated image categorization through machine learning, utilizing
+                                            clustering and dimensionality reduction techniques for efficient
+                                            dataset organization. </li>
+                                        <li>Developed image preprocessing workflows, employing pre-trained
+                                            models (ResNet50, VGG16, InceptionV3) to extract pertinent features,
+                                            ensuring accurate categorization. </li>
+                                        <li>Implemented advanced dimensionality reduction via Principal
+                                            Component Analysis (PCA), optimizing the handling of high-
+                                            dimensional feature vectors. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="scroll-down-btn" onclick="location.href='./#contact'">
+                <i class="fa-solid fa-angles-down"></i>
+            </button>
+        </section>
+
+        <section id="contact" class="ContactPage">
+            <p>Interested</p>
+            <h2>Let's Get to know Each Other</h2>
+            <div class="Contactpage-container">
+                <div class="details-block">
+                    <div class="leftcontact-block">
+                        <h3>CONNECT</h3>
+
+                        <div class="social-media-container">
+                            <!-- Social media icons go here -->
+                            <a href="https://www.linkedin.com/in/daanish-islam/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/DaanishIslam" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/daanish_islam" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <h2>SEND A MESSAGE</h2>
+
+                        <form class="contact-form-details">
+                            <div class="input-group">
+                                <input type="text" id="input-name" placeholder="Name">
+                                <input type="email" id="input-email" placeholder="Email address">
+                                <input type="text" id="input-subject" placeholder="Subject">
+                            </div>
+                            <div class="msg-box"><textarea name="message" type="text" id="input-message"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" id="input-submit"> submit </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="rightcontact-block">
+                        <div class="map-container">
+                            <iframe width="100%" height="450" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=jubail%20city%20center&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="scroll-down-btn" onclick="location.href='./#home'">
+                <i class="fa-solid fa-angles-up"></i>
+            </button>
+        </section>
+    </main>
+</body>
+
+</html>
