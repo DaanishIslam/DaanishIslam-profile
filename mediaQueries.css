@@ -1,5 +1,6 @@
 /* Responsive behavior for mobile and smaller screens */
 /* *to create the responsive dropdown menu now */
+
 @media (max-width: 900px) {
 
     /* Show the toggle button only on smaller screens */
