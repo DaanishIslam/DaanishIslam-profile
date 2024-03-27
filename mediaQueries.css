@@ -1,0 +1,346 @@
+/* Responsive behavior for mobile and smaller screens */
+/* *to create the responsive dropdown menu now */
+@media (max-width: 900px) {
+
+    /* Show the toggle button only on smaller screens */
+    .navbar-toggle-btn {
+        display: block;
+    }
+
+    /* display dropdown menu */
+    .navbar-toggle-btn-dropdown-menu {
+        display: block;
+    }
+
+    /* Hide navigation links by default on smaller screens */
+    .nav-item {
+        display: none;
+    }
+}
+
+/* For screens with a maximum width of 900px */
+@media only screen and (max-width: 900px) {
+    .section {
+        margin: auto 5%;
+        padding-top: 30px;
+    }
+
+    .Aboutpage-container {
+        gap: 2rem;
+        /* height: fit-content; */
+    }
+
+    .Aboutpage-Profile-logo-img {
+        border-radius: 2rem;
+        margin: 30% 0 0 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .details-container {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .ExperiencePage-container {
+        gap: 2rem;
+    }
+
+    .ExperiencePage-container>.details-container {
+        gap: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+
+    .skills-exp {
+        padding: 2rem 0 0 0;
+
+    }
+
+    .skills-grid-container1 {
+        gap: 20px 70px;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
+
+    .catalogue-card {
+        height: 100%;
+    }
+
+    .catalogue-card-visual {
+        padding: 10px;
+    }
+
+    .catalogue-card-visual>img {
+        width: 40%;
+
+    }
+
+    .prj-btn {
+        margin-top: 3%;
+        padding: 15px 30px;
+
+    }
+
+    .ContactPage>h2 {
+        font-size: 2.5rem;
+    }
+
+    .Contactpage-container {
+        gap: 3rem;
+    }
+
+    .details-block {
+        gap: 2rem;
+        margin: 4rem 0 4rem 0;
+    }
+
+    .leftcontact-block {
+        max-width: 40%;
+        max-height: 100%;
+
+    }
+
+    .leftcontact-block>h2 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .input-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        padding: 1%;
+        width: 40%;
+    }
+
+    .input-group input {
+        padding: 8%;
+        margin-bottom: 5%;
+    }
+
+    .msg-box {
+        height: fit-content;
+        width: 70%;
+        margin-bottom: 1em;
+        padding: 1%;
+    }
+
+    .map-frame {
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .scroll-down-btn {
+        display: none;
+    }
+    .section {
+        margin: auto 5%;
+        padding-top: 15px;
+    }
+
+    .Aboutpage {
+        position: relative;
+        height: fit-content;
+        padding-top: 5%;
+
+    }
+
+    .Aboutpage-container {
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Aboutpage-profile-pic-container {
+        height: 40vw;
+        width: auto;
+        margin-top: 10%;
+        /* border: 0.1rem solid; */
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .Aboutpage-Profile-logo-img {
+        border-radius: 2rem;
+        width: auto;
+        height: 200px;
+    }
+
+    .details-container {
+        padding-top: calc(200px - 40vw);
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .about-bio-container {
+        justify-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .info-container {
+        padding: 1.2rem;
+        text-align: center;
+
+    }
+
+    .about_text {
+        word-wrap: break-word;
+        justify-content: center;
+        text-align: justify;
+        margin: auto 25%;
+    }
+
+    .ExperiencePage {
+        height: fit-content;
+    }
+
+    .ExperiencePage-container {
+        gap: 2rem;
+        height: inherit;
+        width: inherit;
+        margin: auto 5%;
+    }
+
+    .ExperiencePage-container>.details-container {
+
+        height: inherit;
+        width: inherit;
+        margin: auto 5%;
+        padding: auto 5%;
+
+    }
+
+    .skills-exp {
+        padding: 2rem 0 0 0;
+        height: 100%;
+        width: 100%;
+        margin: auto 5%;
+
+    }
+
+    .skills-grid-container1 {
+        gap: auto auto;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    .skills-grid-container2 {
+        gap: auto auto;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .ProjectsPage {
+        height: fit-content;
+    }
+
+    .project-catalogue {
+        flex-wrap: wrap;
+    }
+
+    .catalogue-card {
+        /* border: 0.5rem solid rgb(155, 149, 243); */
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: inherit;
+        width: inherit;
+        align-content: center;
+
+    }
+
+    .catalogue-card-visual {
+        border: 0.1rem solid var(--accent);
+
+        border-radius: 20px 20px 0 0;
+    }
+
+    .catalogue-card-desc {
+        border: 0.1rem solid var(--accent);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .catalogue-card-visual>h2,
+    .catalogue-card-visual>p {
+        text-align: center;
+    }
+
+    .ContactPage>h2 {
+        font-size: 2.5rem;
+        text-wrap: wrap;
+    }
+
+    .Contactpage-container {
+        gap: 3rem;
+    }
+
+    .details-block {
+        height: fit-content;
+        width: inherit;
+    }
+
+    .leftcontact-block {
+        max-width: 40%;
+        max-height: 100%;
+
+    }
+
+    .leftcontact-block>h2 {
+        font-size: 1.2rem;
+    }
+
+    .social-media-container i {
+        margin: auto 1rem;
+    }
+
+    form {
+        max-width: 100%;
+        max-height: 80%;
+    }
+
+    .input-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        padding: 1%;
+        width: 30%;
+    }
+
+    .input-group input {
+        padding: 20% 0;
+        margin: 0 10% 5% 10%;
+        width: fit-content;
+    }
+
+    .msg-box {
+        height: fit-content;
+        width: fit-content;
+        margin-bottom: 1em;
+        padding: 1%;
+    }
+
+    .map-frame {
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+    }
+}
